@@ -155,6 +155,6 @@ class FlashNotifier
 	 */
 	public static function setupViewNamespace()
 	{
-		View::addNamespace('ipunkt/laravel-notifications', app_path('../vendor/ipunkt/laravel-notifications/src/views'));
+		\Illuminate\Support\Facades\View::addNamespace('ipunkt/laravel-notifications', app_path('../vendor/ipunkt/laravel-notifications/src/views'));
 	}
 }
