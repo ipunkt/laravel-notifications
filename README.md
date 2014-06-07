@@ -7,7 +7,7 @@ Thanks to Jeffrey Way (https://laracasts.com/lessons/flexible-flash-messages)
 Add to your composer.json following lines
 
 	"require": {
-		"ipunkt/laravel-notifications": "~1.0"
+		"ipunkt/laravel-notifications": "1.*"
 	}
 
 Add `'Ipunkt\LaravelNotifications\NotificationsServiceProvider',` to `providers` in `app/config/app.php`.
