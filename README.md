@@ -34,6 +34,10 @@ In controller action use following statement to make a flash notification:
 	//	flashing an overlaying message
 	Flash::overlay('Welcome');
 
+You can also use translatable messages:
+
+	Flash::message('app.errors.input_invalid');
+
 In your view or layout template (e.g. a blade template) include the view of your choice:
 
 	@include('ipunkt/laravel-notifications::bootstrap-3/flash')
@@ -42,8 +46,10 @@ Be sure to add following to prevent from getting error like "No hint path...":
 
 	View::addNamespace('ipunkt/laravel-notifications', app_path('../vendor/ipunkt/laravel-notifications/src/views'));
 
+Or you can `Flash::setupViewNamespace()` store in your bootstrapping code to have this hint path already assigned to the view.
 
-Or you can publish the views and modify it to your needs (optional):
+
+You can publish the views and modify it to your needs (optional):
 
 	$> php artisan view:publish ipunkt/laravel-notifications
 
@@ -51,4 +57,4 @@ Or you can publish the views and modify it to your needs (optional):
 ## Credits
 
 All credits goes to Jeffrey Way and <https://laracasts.com>.
-We add translations and split various templates as package content.
+We add translations for views, translating message string and split various templates as package content.
