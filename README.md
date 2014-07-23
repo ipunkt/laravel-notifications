@@ -1,5 +1,7 @@
 # Notification package for Laravel 4.x
 
+[![Latest Stable Version](https://poser.pugx.org/ipunkt/laravel-notifications/v/stable.svg)](https://packagist.org/packages/ipunkt/laravel-notifications) [![Latest Unstable Version](https://poser.pugx.org/ipunkt/laravel-notifications/v/unstable.svg)](https://packagist.org/packages/ipunkt/laravel-notifications) [![License](https://poser.pugx.org/ipunkt/laravel-notifications/license.svg)](https://packagist.org/packages/ipunkt/laravel-notifications) [![Total Downloads](https://poser.pugx.org/ipunkt/laravel-notifications/downloads.svg)](https://packagist.org/packages/ipunkt/laravel-notifications)
+
 Thanks to Jeffrey Way (https://laracasts.com/lessons/flexible-flash-messages)
 
 ## Installation
