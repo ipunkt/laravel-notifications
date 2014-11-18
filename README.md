@@ -42,14 +42,7 @@ You can also use translatable messages:
 
 In your view or layout template (e.g. a blade template) include the view of your choice:
 
-	@include('ipunkt/laravel-notifications::bootstrap-3/flash')
-
-Be sure to add following to prevent from getting error like "No hint path...":
-
-	View::addNamespace('ipunkt/laravel-notifications', app_path('../vendor/ipunkt/laravel-notifications/src/views'));
-
-Or you can `Flash::setupViewNamespace()` store in your bootstrapping code to have this hint path already assigned to the view.
-
+	@include('laravel-notifications::bootstrap-3/flash')
 
 You can publish the views and modify it to your needs (optional):
 
