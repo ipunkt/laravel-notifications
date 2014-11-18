@@ -147,14 +147,4 @@ class FlashNotifier
 
 		return $message;
 	}
-
-	/**
-	 * setting up view namespace to handle as hint path
-	 *
-	 * optional helper function
-	 */
-	public static function setupViewNamespace()
-	{
-		\Illuminate\Support\Facades\View::addNamespace('ipunkt/laravel-notifications', app_path('../vendor/ipunkt/laravel-notifications/src/views'));
-	}
 }
