@@ -7,8 +7,8 @@
  */
 
 return array(
-	'modal' => [
+	'modal' => array(
 		'title' => 'Notice',
 		'close' => 'Close',
-	],
+	),
 );

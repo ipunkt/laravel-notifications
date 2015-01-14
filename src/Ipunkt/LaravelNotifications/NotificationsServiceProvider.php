@@ -28,10 +28,11 @@ class NotificationsServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-		$this->app->bindShared('flash.notifications', function () {
+		$app = $this->app;
+		$this->app->bindShared('flash.notifications', function() use ($app) {
 
 			//	return an instance
-			return $this->app->make('Ipunkt\LaravelNotifications\FlashNotifier');
+			return $app->make('Ipunkt\LaravelNotifications\FlashNotifier');
 		});
 	}
 
